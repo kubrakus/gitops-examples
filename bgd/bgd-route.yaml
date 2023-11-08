@@ -7,15 +7,10 @@ metadata:
   name: bgd
   namespace: bgd
 spec:
-  host: "bgd.apps.cluster-dde0.dde0.example.opentlc.com"
+  host: "bgd.apps.apps.gollum.turknet.dev"
   port:
     targetPort: 8080
   to:
     kind: Service
     name: bgd
     weight: 100
-status:
-  ingress:
-  - conditions:
-    - status: "True"
-      type: Admitted
